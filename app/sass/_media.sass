@@ -1,17 +1,9 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
-
-/* Large Devices, Wide Screens */
 @media only screen and (max-width : 1800px)
-	.trend-strategies .container, .advantages .container
-		padding: 0 20px
-
 	.trend-strategies__left
 		max-width: 730px
-
-	.trend-strategies__right
-		max-width: 778px
 
 	h1
 		font-size: 40px
@@ -23,53 +15,32 @@
 	.trend-strategies__right
 		max-width: 748px
 
-	.trend-strategies__img
-		max-width: 310px
+	.advantages-icon
+		max-height: 220px
 
-	.trend-strategies__text
-		width: calc(100% - 310px)
-
-
-	.advantages-wrapper
-		margin: 0 auto 60px 0
-
-	.advantages h2
-		margin: 60px auto 70px	0
+	.advantages-content
+		max-width: 800px
 
 @media only screen and (max-width : 1500px)
 	h1
-		font-size: 34px
+		font-size: 40px
 
 	.trend-strategies__left
-		max-width: 612px	
+		max-width: 612px
+		margin: 0 auto 0 0
 
-	.advantages::before
-		width: 798px
+	.trend-strategies__right
+		min-width: auto
+		margin: 0
 
-	.advantages
-		background-size: 613px
-		h2
-			margin: 48px 0 26px
-			max-width: 700px
-
-	.advantages-box
-		font-size: 16px
-		padding: 15px 20px
-		margin: 0 0 16px
-
-	.advantages-box__icon
-		width: 48px
-		height: 48px
-		min-width: 48px
-
-	.advantages-wrapper
-		max-width: 700px
-
-	.trend-strategies__img
-		max-width: 280px
 
 	.trend-strategies__text
-		width: calc(100% - 280px)
+		margin: 0 0 0 20px
+
+	.advantages
+		padding: 48px 0 43px
+		h2
+			margin: 0 auto 38px
 
 
 @media only screen and (max-width : 1400px)
@@ -80,7 +51,6 @@
 			a
 				font-size: 16px
 
-
 	.trend-strategies__left
 		max-width: 976px
 		text-align: center
@@ -88,10 +58,10 @@
 
 	h1
 		text-align: center
-		margin: 0 auto 14px
+		margin: 0 auto 25px
 
 	.trend-strategies
-		padding: 45px 0 29px
+		padding: 68px 0 76px
 		.box-text 
 			p		
 				margin: 0 0 16px
@@ -100,31 +70,40 @@
 
 	.trend-strategies__right
 		margin: 32px auto
-		max-width: 726px
+		max-width: 688px
+		font-size: 18px
 		h3
-			margin: 0 auto 46px
+			margin: 0 auto 24px
+
+	.trend-strategies__text
+		margin: 0 0 0 54px
+		text-align: center
 
 	.video-box
 		margin: 0 auto	
 
-
 	.clients .container
 		padding: 0 40px
 
-
-	footer
-		-webkit-background-size: 490px
-		background-size: 490px
-
 	.trend-strategies-bottom
 		margin: 0
+
+	.list-lang
+		margin: 0 24px 0 auto
+
+	.advantages-icon
+		max-width: 180px
+
 
 @media only screen and (max-width : 1200px)
 	main
 		height: 704px
 
 	header
-		padding: 18px 0  
+		padding: 18px 0
+
+	.logo
+		max-width: 105px
 
 	.list-lang li 
 		margin: 0 16px 0 0
@@ -134,17 +113,48 @@
 
 	.menu
 		li
+			margin: 0 15px 0 0
 			a
 				font-size: 15px
 
+	.trend-strategies
+		.container
+			flex-direction: column
+			align-items: center
 
 	.trend-strategies__right
-		max-width: 854px
-		margin: 27px auto 71px
+		max-width: 688px
+		margin: 72px auto 56px
+
+	h1
+		font-size: 52px
+
+	.video-box
+		max-width: 740px
+		height: 416px
+
+	.mission
+		padding: 80px 0 114px
+
+	.advantages-icon
+		max-width: 235px
+		order: 1
+		margin: 0 34px
+
+	.advantages-wrapper
+		align-items: center
+		justify-content: center
+
+	.advantages
+		h6
+			margin: 20px auto 11px
+
+	.advantages-content
+		max-width: 1008px
 
 @media only screen and (max-width : 1100px)
 	.container
-		padding: 0 30px
+		padding: 0 25px
 
 	.scroll
 		.menu
@@ -153,13 +163,16 @@
 	header
 		background: $accent
 		.logo
-			display: block
-			max-width: 61px
+			display: flex
+			max-width: 105px
 		.btn
 			display: none
 		.btn-menu
 			display: flex
-			max-width: 101px	
+
+	.btn-menu
+		display: flex
+		max-width: 240px
 
 	.list-lang
 		margin: 0 27px 0 auto
@@ -167,75 +180,71 @@
 	.logo
 		max-width: 85px	
 
-	.advantages-box
-		width: 256px
-		margin: 0 0 16px
-
-
-	.advantages-wrapper
-		max-width: 540px
-		margin: 0 0 30px
-
-	.advantages
-		&:before
-			right: -231px
 
 	.partners
-		padding: 33px 0 13px
+		padding: 80px 0 22px
 
 	.partners-box
-		width: 49%
-		margin: 0 0 23px
-		padding: 35px 10px 30px
-		min-height: 407px
+		width: 100%
+		margin: 0 0 32px
+		padding: 35px 40px 23px
+		min-height: auto
 		&__text
 			margin: 0 auto auto
-		&:nth-child(4)
-			margin: 0 0 23px
-		&:last-child
-			margin: 0 auto 23px
-
-	.partners-box-two
-		order: 1
-		.partners-box__logo
-			margin: 0 auto 34px
+			br
+				display: none
+		a.color-gradient
+			margin: 28px auto 0
 
 	.partners-box__logo
-		margin: 0 auto 34px
+		margin: 0 auto 27px
 
 	footer
-		padding: 15px 0 16px
-		-webkit-background-size: 480px
-		background-size: 480px
+		padding: 40px 0 45px
 		.logo
-			margin: 0 56px 0 0
-			max-width: 71px
+			margin: 0 25px 0 0
+			max-width: 150px
 
-	h2
-		font-size: 32px
+	.decor-bg-item1
+		top: -236px
+		left: -115px
 
+	.decor-bg-item2
+		bottom: -268px
+		left: -115px
+
+	.decor-bg-item3
+		top: -236px
+		right: -133px
+
+	.decor-bg-item4
+		right: -133px
+		bottom: -236px
+
+@media only screen and (max-width : 860px)
+	.container
+		padding: 0 10px
 
 @media only screen and (max-width : 768px)
 	footer
-		padding: 25px 0 50px
-		background: #0B481D url("../img/footer-bg-mobile.svg") no-repeat left bottom
-		-webkit-background-size: 431px
-		background-size: 431px
+		padding: 31px 0 63px
+		background: $accent url("../img/footer-bg.jpg") no-repeat center bottom
+			size: 1920px
 		.container
 			flex-direction: column
 			align-items: center
 		.logo
-			margin: 0 auto 30px
-			max-width: 71px
+			margin: 0 auto 21px
+			max-width: 142px
 
 	.footer-box-social
-		margin: 45px auto 0
+		margin: 44px auto 0
 		text-align: center
 		p
 			margin: 0
 
 	.list-social
-		margin: 20px auto	30px
+		margin: 20px auto
 		justify-content: center
 
 	.address
@@ -243,102 +252,96 @@
 		margin: 0 auto 12px	
 
 	.partners-box
-		min-height: 382px
-		padding: 34px 8px 24px
+		padding: 10px 10px 30px
 		font-size: 16px
-		margin: 0 0 16px
+		margin: 0 0 24px
 		a.color-gold
 			font-size: 18px
+			margin: 39px auto 0
 
 	.partners-box__logo
-		height: 120px
-		margin: 0 auto 22px	
+		height: 116px
+		margin: 0 auto 30px
 
 	.partners
-		padding: 32px 0
 		h2
 			margin: 0 auto 33px
-		.container
-			padding: 0 8px
 
-	.advantages
-		h2
-			max-width: 540px
+	header
+		padding: 10px 0
 
+	.btn-menu
+		max-width: 118px
 
-	.advantages-box
-		width: 49%
+	.list-lang
+		margin: 0 16px 0 auto
 
+	h1, h2
+		font-size: 40px
 
+	.decor-bg-item1
+		top: -190px
+		left: -450px
 
+	.decor-bg-item2
+		bottom: -209px
+		left: -450px
 
-@media only screen and (max-width : 675px)	
-	.advantages-box
-		width: 100%
-		border: 1px solid $accent
-		padding: 16px
-		text-align: center
-		font-weight: 500
-		p
-			margin: 0 auto
+	.decor-bg-item3
+		top: -190px
+		right: -448px
 
-	.advantages
-		background: #fff
-		position: relative
-		padding: 35px 0 23px
-		&:before
-			display: none
-		h2
-			margin: 0 auto 25px
-			max-width: none
-		.svg-icon
-			fill: #F6B52E
+	.decor-bg-item4
+		right: -448px
+		bottom: -209px
 
-	.advantages-wrapper
-		max-width: none
-
-	.mission-images
-		display: none
-
+@media only screen and (max-width : 675px)
 	.mission-content
 		width: 100%
 		padding: 0
 
 	.mission
+		padding: 87px 0 103px
 		text-align: center
-		.container
-			padding: 0 15px
 		.box-text
 			font-size: 16px
 
+	.advantages-icon
+		max-width: 200px
+		margin: 0 7px
+
+	.advantages
+		padding: 43px 0 30px
+		h6
+			margin: 14px auto 36px
+		h2
+			margin: 0 auto 21px
+
+	.trend-strategies
+		padding: 32px 0
 
 @media only screen and (max-width : 575px)
-	.trend-strategies
-		background: #fff
-		&::after
-			display: none
-
 	.partners
-		background: #F5F5F5
-		padding: 36px 0 20px
+		padding: 87px 0 44px
 
 	.partners-box
-		border: 1px solid #143879
 		width: 100%
-		min-height: 348px
-		padding: 25px 8px 34px
+		padding: 20px 8px 32px
 		font-size: 16px
 		margin: 0 0 16px
 		a.color-gold
 			font-size: 18px
-		&__text
-			margin: 0 0 22px
+		&__logo
+			margin: 0 auto 20px
 
-	.trend-strategies .container
-		padding: 0 3px
 		
 	.video-box
-		height: 207px		
+		height: 207px
+		max-width: 370px
+		img
+			border-radius: 10px
+			box-shadow: none
+			filter: drop-shadow(0px 16px 32px rgba(10, 121, 41, 0.08))
 
 	.trend-strategies
 		padding: 39px 0 19px
@@ -346,23 +349,24 @@
 			font-size: 16px
 
 	.trend-strategies__right
-		padding: 8px 5px 19px
-		margin: 40px auto 48px
+		padding: 16px 20px 37px
+		margin: 48px auto 23px
+		flex-direction: column
+		align-items: center
+		box-shadow: 0px 2px 8px #D7DCF5
 
 	.trend-strategies__text
 		width: 100%
 		padding: 0
-		margin: 34px auto 0
+		margin: 0px auto
 		h3
-			margin: 0 auto 15px		
+			margin: 0 auto 25px
 
 	.trend-strategies__img
-		max-width: 171px
-		margin: 0 auto
+		margin: 0 auto 16px
 
 	.mission h2
 		margin: 0 auto 25px
-
 
 	main
 		height: 254px
@@ -373,16 +377,7 @@
 		.logo
 			display: flex
 
-	.logo
-		max-width: 90px
 
-	header
-		padding: 10px 0
-		.logo, .btn-menu
-			display: flex
-		.container
-			padding: 0 16px 0 9px
-			
 	.btn-close
 		width: 24px
 		height: 24px
@@ -414,22 +409,30 @@
 		margin: 0 0 23px	
 
 	#modal-success h2
-		margin: 49px auto	
+		margin: 49px auto
+
+	.box-text
+		font-size: 16px
+
+	.advantages-icon
+		margin: 0 auto
+		max-width: 160px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 360px)
-	.advantages-box
-		font-size: 16px
-
 	h2
 		font-size: 36px
 
-
-	.box-text
-		font-size: 16px	
 
 	h1
 		font-size: 38px	
 
 	.partners-box
-		font-size: 14px	
+		font-size: 14px
+
+	.btn-menu
+		max-width: 100px
+		height: 40px
+
+	.advantages-icon
+		max-width: 130px
