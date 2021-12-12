@@ -203,6 +203,12 @@ label
     background: linear-gradient(180deg, #FF5800 0%, #FFC6A9 100%)
     box-shadow: none
 
+.btn-gradient
+  background: linear-gradient(180deg, #F3D576 0%, #FF5800 100%), linear-gradient(180deg, #FFC6A9 0%, #C6A987 100%)
+  color: #fff
+  &:hover
+    background: linear-gradient(to top, #F3D576 0%, #FF5800 100%), linear-gradient(180deg, #FFC6A9 0%, #C6A987 100%)
+
 .btn-menu
   display: none
   height: 42px
@@ -223,8 +229,8 @@ label
       display: flex
       align-items: center
       justify-content: center
-      width: 36px
-      height: 24px
+      width: 30px
+      height: 20px
 
       img
         width: 100%
@@ -233,7 +239,7 @@ label
 
 h1
   width: 100%
-  font-size: 52px
+  font-size: 48px
   font-weight: bold
   margin: 0 0 25px
   text-transform: uppercase
@@ -290,7 +296,7 @@ header
   z-index: 3
   width: 100%
   position: fixed
-  padding: 10px 0
+  padding: 17.5px 0
   transition: .3s ease
 
   .container
@@ -302,7 +308,9 @@ header
 
 .scroll
   background: $accent
-
+  .btn-gradient
+    background: #fff
+    color: $accent
   .menu, .logo
     display: flex
 
@@ -312,6 +320,8 @@ header
   display: flex
   align-items: center
   justify-content: center
+  img
+    width: 100%
 
 .menu
   display: none
@@ -358,7 +368,7 @@ header
     top: 0
     width: 100%
     height: 100%
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(243, 243, 248, 0.4) 57.52%), url('../img/bg1.jpeg') no-repeat center top
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(243, 243, 248, 0.4) 57.52%), url('../img/bg1.jpg') no-repeat right top
       size: cover
     opacity: 0.4
 
@@ -387,18 +397,17 @@ header
 .trend-strategies__right
   font-size: 20px
   margin: 0 -88px 0 0
-  text-align: center
   max-width: 866px
   min-width: 866px
   background: rgba(#fff, .8)
   border: 1px solid #F36A22
     radius: 4px
-  box-shadow: 0px 38px 15px -22px rgba(117, 117, 238, 0.1)
-  padding: 8px 22px
+  box-shadow: 0 38px 15px -22px rgba(117, 117, 238, 0.1)
+  padding: 21px 33px 21px 40px
   display: flex
   align-items: center
   justify-content: flex-start
-
+  text-align: center
   h3
     margin: 0 auto 24px
     font-weight: bold
@@ -417,7 +426,7 @@ header
 
 .trend-strategies__text
   width: calc(100% - 182px)
-  text-align: left
+  text-align: center
   margin: 0 0 0 128px
   max-width: 390px
 
@@ -437,8 +446,8 @@ header
   margin: 0 auto
 
   width: 100%
-  max-width: 920px
-  height: 517px
+  max-width: 742px
+  height: 416px
   display: flex
   align-items: center
   justify-content: center
@@ -474,19 +483,19 @@ header
   width: 708px
 
 .decor-bg-item1
-  top: -236px
-  left: -164px
+  top: -200px
+  left: -123px
 
 .decor-bg-item2
-  bottom: -250px
-  left: -164px
+  bottom: -200px
+  left: -123px
 
 .decor-bg-item3
-  top: -236px
+  top: -200px
   right: -123px
 
 .decor-bg-item4
-  bottom: -250px
+  bottom: -200px
   right: -123px
 
 .strong
@@ -523,7 +532,7 @@ strong
     bottom: 0
     width: 100%
     height: 100%
-    opacity: .2
+    opacity: .25
     background: url('../img/business-bg.jpg') no-repeat center bottom
       size: cover
   h2
@@ -538,9 +547,13 @@ strong
 
 .advantages-icon
   max-width: 286px
+  height: 158px
   width: 100%
   display: flex
   align-items: center
+  img
+    max-height: 100%
+    width: auto
 
 .advantages-content
   width: 100%
@@ -548,6 +561,7 @@ strong
   text-align: center
   margin: 0 auto
   color: #242334
+  font-weight: 500
 
 .advantages-wrapper
   width: 100%
@@ -816,7 +830,7 @@ footer
   top: 0
   background: $accent
   padding: 35px 24px 29px 40px
-  max-width: 288px
+  //max-width: 288px
   width: 100%
   display: none
   overflow-y: auto
@@ -828,7 +842,7 @@ footer
     max-width: 90px
     width: 100%
     margin: 0
-    display: none
+    //display: none
 
   .menu
     width: 100%

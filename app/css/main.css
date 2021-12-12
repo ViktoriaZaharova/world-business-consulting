@@ -216,6 +216,14 @@ label {
     -webkit-box-shadow: none;
             box-shadow: none; }
 
+.btn-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F3D576), to(#FF5800)), -webkit-gradient(linear, left top, left bottom, from(#FFC6A9), to(#C6A987));
+  background: linear-gradient(180deg, #F3D576 0%, #FF5800 100%), linear-gradient(180deg, #FFC6A9 0%, #C6A987 100%);
+  color: #fff; }
+  .btn-gradient:hover {
+    background: -webkit-gradient(linear, left bottom, left top, from(#F3D576), to(#FF5800)), -webkit-gradient(linear, left top, left bottom, from(#FFC6A9), to(#C6A987));
+    background: linear-gradient(to top, #F3D576 0%, #FF5800 100%), linear-gradient(180deg, #FFC6A9 0%, #C6A987 100%); }
+
 .btn-menu {
   display: none;
   height: 42px; }
@@ -244,8 +252,8 @@ label {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      width: 36px;
-      height: 24px; }
+      width: 30px;
+      height: 20px; }
       .list-lang li a img {
         width: 100%;
         height: 100%;
@@ -254,7 +262,7 @@ label {
 
 h1 {
   width: 100%;
-  font-size: 52px;
+  font-size: 48px;
   font-weight: bold;
   margin: 0 0 25px;
   text-transform: uppercase; }
@@ -318,7 +326,7 @@ header {
   z-index: 3;
   width: 100%;
   position: fixed;
-  padding: 10px 0;
+  padding: 17.5px 0;
   -webkit-transition: .3s ease;
   transition: .3s ease; }
   header .container {
@@ -331,6 +339,9 @@ header {
 
 .scroll {
   background: #F36A22; }
+  .scroll .btn-gradient {
+    background: #fff;
+    color: #F36A22; }
   .scroll .menu, .scroll .logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -348,6 +359,8 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  .logo img {
+    width: 100%; }
 
 .menu {
   display: none;
@@ -393,8 +406,8 @@ header {
     top: 0;
     width: 100%;
     height: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(57.52%, rgba(243, 243, 248, 0.4))), url("../img/bg1.jpeg") no-repeat center top;
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(243, 243, 248, 0.4) 57.52%), url("../img/bg1.jpeg") no-repeat center top;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(57.52%, rgba(243, 243, 248, 0.4))), url("../img/bg1.jpg") no-repeat right top;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(243, 243, 248, 0.4) 57.52%), url("../img/bg1.jpg") no-repeat right top;
       background-size: cover;
     opacity: 0.4; }
   .trend-strategies .box-text strong {
@@ -418,15 +431,14 @@ header {
 .trend-strategies__right {
   font-size: 20px;
   margin: 0 -88px 0 0;
-  text-align: center;
   max-width: 866px;
   min-width: 866px;
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid #F36A22;
     border-radius: 4px;
-  -webkit-box-shadow: 0px 38px 15px -22px rgba(117, 117, 238, 0.1);
-          box-shadow: 0px 38px 15px -22px rgba(117, 117, 238, 0.1);
-  padding: 8px 22px;
+  -webkit-box-shadow: 0 38px 15px -22px rgba(117, 117, 238, 0.1);
+          box-shadow: 0 38px 15px -22px rgba(117, 117, 238, 0.1);
+  padding: 21px 33px 21px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -435,7 +447,8 @@ header {
           align-items: center;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: flex-start; }
+          justify-content: flex-start;
+  text-align: center; }
   .trend-strategies__right h3 {
     margin: 0 auto 24px;
     font-weight: bold;
@@ -462,7 +475,7 @@ header {
 
 .trend-strategies__text {
   width: calc(100% - 182px);
-  text-align: left;
+  text-align: center;
   margin: 0 0 0 128px;
   max-width: 390px; }
   .trend-strategies__text p {
@@ -485,8 +498,8 @@ header {
 .video-box {
   margin: 0 auto;
   width: 100%;
-  max-width: 920px;
-  height: 517px;
+  max-width: 742px;
+  height: 416px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,19 +542,19 @@ header {
   width: 708px; }
 
 .decor-bg-item1 {
-  top: -236px;
-  left: -164px; }
+  top: -200px;
+  left: -123px; }
 
 .decor-bg-item2 {
-  bottom: -250px;
-  left: -164px; }
+  bottom: -200px;
+  left: -123px; }
 
 .decor-bg-item3 {
-  top: -236px;
+  top: -200px;
   right: -123px; }
 
 .decor-bg-item4 {
-  bottom: -250px;
+  bottom: -200px;
   right: -123px; }
 
 .strong {
@@ -580,7 +593,7 @@ strong {
     bottom: 0;
     width: 100%;
     height: 100%;
-    opacity: .2;
+    opacity: .25;
     background: url("../img/business-bg.jpg") no-repeat center bottom;
       background-size: cover; }
   .advantages h2 {
@@ -595,6 +608,7 @@ strong {
 
 .advantages-icon {
   max-width: 286px;
+  height: 158px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -602,13 +616,17 @@ strong {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .advantages-icon img {
+    max-height: 100%;
+    width: auto; }
 
 .advantages-content {
   width: 100%;
   max-width: 1024px;
   text-align: center;
   margin: 0 auto;
-  color: #242334; }
+  color: #242334;
+  font-weight: 500; }
 
 .advantages-wrapper {
   width: 100%;
@@ -899,7 +917,6 @@ footer {
   top: 0;
   background: #F36A22;
   padding: 35px 24px 29px 40px;
-  max-width: 288px;
   width: 100%;
   display: none;
   overflow-y: auto;
@@ -910,8 +927,7 @@ footer {
     position: absolute;
     max-width: 90px;
     width: 100%;
-    margin: 0;
-    display: none; }
+    margin: 0; }
   .mobile-menu .menu {
     width: 100%;
     -webkit-box-orient: vertical;
@@ -954,9 +970,14 @@ footer {
   .trend-strategies__left {
     max-width: 680px; }
   .trend-strategies__right {
-    max-width: 748px; }
+    max-width: 748px;
+    min-width: auto; }
   .advantages-icon {
-    max-height: 220px; }
+    max-height: 220px;
+    height: 130px; }
+    .advantages-icon img {
+      width: auto;
+      max-height: 100%; }
   .advantages-content {
     max-width: 800px; } }
 
@@ -1020,7 +1041,7 @@ footer {
   main {
     height: 704px; }
   header {
-    padding: 18px 0; }
+    padding: 20.5px 0; }
   .logo {
     max-width: 105px; }
   .list-lang li {
@@ -1113,19 +1134,19 @@ footer {
   footer {
     padding: 40px 0 45px; }
     footer .logo {
-      margin: 0 25px 0 0;
+      margin: 0 5px 0 -10px;
       max-width: 150px; }
   .decor-bg-item1 {
     top: -236px;
     left: -115px; }
   .decor-bg-item2 {
-    bottom: -268px;
+    bottom: -236px;
     left: -115px; }
   .decor-bg-item3 {
     top: -236px;
-    right: -133px; }
+    right: -115px; }
   .decor-bg-item4 {
-    right: -133px;
+    right: -115px;
     bottom: -236px; } }
 
 @media only screen and (max-width: 860px) {
@@ -1174,7 +1195,7 @@ footer {
   .partners h2 {
     margin: 0 auto 33px; }
   header {
-    padding: 10px 0; }
+    padding: 12.5px 0; }
   .btn-menu {
     max-width: 118px; }
   .list-lang {
@@ -1183,16 +1204,16 @@ footer {
     font-size: 40px; }
   .decor-bg-item1 {
     top: -190px;
-    left: -450px; }
+    left: -448px; }
   .decor-bg-item2 {
-    bottom: -209px;
-    left: -450px; }
+    bottom: -190px;
+    left: -448px; }
   .decor-bg-item3 {
     top: -190px;
     right: -448px; }
   .decor-bg-item4 {
     right: -448px;
-    bottom: -209px; } }
+    bottom: -190px; } }
 
 @media only screen and (max-width: 675px) {
   .mission-content {
@@ -1206,6 +1227,8 @@ footer {
   .advantages-icon {
     max-width: 200px;
     margin: 0 7px; }
+    .advantages-icon:first-child {
+      max-width: 235px; }
   .advantages {
     padding: 43px 0 30px; }
     .advantages h6 {
@@ -1299,7 +1322,10 @@ footer {
     font-size: 16px; }
   .advantages-icon {
     margin: 0 auto;
-    max-width: 160px; } }
+    max-width: 150px;
+    height: 100px; }
+    .advantages-icon:first-child {
+      max-width: 180px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 360px) {

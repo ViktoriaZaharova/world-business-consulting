@@ -14,9 +14,14 @@
 
 	.trend-strategies__right
 		max-width: 748px
+		min-width: auto
 
 	.advantages-icon
 		max-height: 220px
+		height: 130px
+		img
+			width: auto
+			max-height: 100%
 
 	.advantages-content
 		max-width: 800px
@@ -100,7 +105,7 @@
 		height: 704px
 
 	header
-		padding: 18px 0
+		padding: 20.5px 0
 
 	.logo
 		max-width: 105px
@@ -109,7 +114,7 @@
 		margin: 0 16px 0 0
 		a
 			width: 24px
-			height: 16px	
+			height: 16px
 
 	.menu
 		li
@@ -202,7 +207,7 @@
 	footer
 		padding: 40px 0 45px
 		.logo
-			margin: 0 25px 0 0
+			margin: 0 5px 0 -10px
 			max-width: 150px
 
 	.decor-bg-item1
@@ -210,15 +215,15 @@
 		left: -115px
 
 	.decor-bg-item2
-		bottom: -268px
+		bottom: -236px
 		left: -115px
 
 	.decor-bg-item3
 		top: -236px
-		right: -133px
+		right: -115px
 
 	.decor-bg-item4
-		right: -133px
+		right: -115px
 		bottom: -236px
 
 @media only screen and (max-width : 860px)
@@ -268,7 +273,7 @@
 			margin: 0 auto 33px
 
 	header
-		padding: 10px 0
+		padding: 12.5px 0
 
 	.btn-menu
 		max-width: 118px
@@ -281,11 +286,11 @@
 
 	.decor-bg-item1
 		top: -190px
-		left: -450px
+		left: -448px
 
 	.decor-bg-item2
-		bottom: -209px
-		left: -450px
+		bottom: -190px
+		left: -448px
 
 	.decor-bg-item3
 		top: -190px
@@ -293,7 +298,7 @@
 
 	.decor-bg-item4
 		right: -448px
-		bottom: -209px
+		bottom: -190px
 
 @media only screen and (max-width : 675px)
 	.mission-content
@@ -309,6 +314,8 @@
 	.advantages-icon
 		max-width: 200px
 		margin: 0 7px
+		&:first-child
+			max-width: 235px
 
 	.advantages
 		padding: 43px 0 30px
@@ -416,7 +423,10 @@
 
 	.advantages-icon
 		margin: 0 auto
-		max-width: 160px
+		max-width: 150px
+		height: 100px
+		&:first-child
+			max-width: 180px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 360px)
